@@ -1,0 +1,411 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<!-- CATEGORY-START -->
+<div class="wrapper">
+  <aside>
+    <div class="asideBtn">
+      <button>Полная цена</button>
+      <button>Цена в месяц</button>
+    </div>
+    <div class="asidePrice">
+      <p>Цена</p>
+      От
+      <label class="labelPrice">
+        <input id="price" type="text" />
+      </label>
+      До <input id="price" type="text" />
+      <br />
+      <input
+        id="range"
+        type="range"
+        min="0"
+        max="3000000"
+        value="1200000"
+        name="range"
+        step="1000"
+      />
+      <label class="labelRange" for="range"></label>
+    </div>
+    <div class="asideFilters">
+      <div class="asideFiltersHead">
+        <p>Популярные фильтры</p>
+        <img src="{% static 'images/arrow-cart.svg' %}" alt="" />
+      </div>
+      <div class="filtersPay">
+        <input id="pay1" type="checkbox" value="Кредит" />
+        <label class="labelPay1" for="pay1">Кредит</label>
+        <input id="pay2" type="checkbox" value="Оплата частями" />
+        <label class="labelPay2" for="pay2">Оплата_частями</label>
+        <input id="pay3" type="checkbox" value="Кредит" />
+        <label class="labelPay3" for="pay3">Акции</label>
+        <input id="pay4" type="checkbox" value="Кредит" />
+        <label class="labelPay4" for="pay4">Скидки</label>
+        <input id="pay5" type="checkbox" value="Кредит" />
+        <label class="labelPay5" for="pay5">Подарки</label>
+      </div>
+      <div class="filetrsMark">
+        <div class="filetrsMarkItem">
+          <input type="radio" id="markSamsung" name="mark" value="Samsung" />
+          <label for="markSamsung">Samsung</label><span>94</span>
+        </div>
+        <div class="filetrsMarkItem">
+          <input type="radio" id="markApple" name="mark" value="apple" />
+          <label for="markApple">apple</label><span>94</span>
+        </div>
+        <div class="filetrsMarkItem">
+          <input type="radio" id="markXiaomi" name="mark" value="Xiaomi" />
+          <label for="markXiaomi">Xiaomi</label><span>94</span>
+        </div>
+        <div class="filetrsMarkItem">
+          <input type="radio" id="markZTE" name="mark" value="ZTE" />
+          <label for="markZTE">ZTE</label><span>94</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <ul class="content">
+    <li class="saleCatd">
+      <div class="saleLabel">
+        <img class="saleLabelConer" src="{% static 'images/sale-end.png' %}" alt="" />
+        <span>Скидка</span>
+        <div class="saleCatdInfo">
+          <div class="saleCatdInfoImages">
+            <img src="{% static 'images/phone27.png' %}" alt="phone27" />
+            <div class="saleCatdInfoImagesColors">
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: rgb(0, 0, 0)"
+              ></div>
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: rgb(236, 187, 26)"
+              ></div>
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: #436734"
+              ></div>
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: #8b11a6"
+              ></div>
+            </div>
+          </div>
+          <h3>Samsung a52 4/256 dual sim onyx black</h3>
+          <div class="saleCatdInfoLostPrice">
+            <span>16 800 000</span><span>1 330 000 сум</span>
+          </div>
+          <span class="saleCardInfoNewPrice">15,470,999</span>
+          <span class="saleCardInfoNewCredit">от 1 362 000 сум/мес</span>
+          <div class="btnCart">
+            <img src="{% static 'images/cart-card.svg' %}" alt="cart" />
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="saleCatd">
+      <div class="saleLabel">
+        <img class="saleLabelConer" src="{% static 'images/sale-end.png' %}" alt="" />
+        <span>Скидка</span>
+        <div class="saleCatdInfo">
+          <div class="saleCatdInfoImages">
+            <img src="{% static 'images/phone27.png' %}" alt="phone27" />
+            <div class="saleCatdInfoImagesColors">
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: rgb(0, 0, 0)"
+              ></div>
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: rgb(236, 187, 26)"
+              ></div>
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: #436734"
+              ></div>
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: #8b11a6"
+              ></div>
+            </div>
+          </div>
+          <h3>Samsung a52 4/256 dual sim onyx black</h3>
+          <div class="saleCatdInfoLostPrice">
+            <span>16 800 000</span><span>1 330 000 сум</span>
+          </div>
+          <span class="saleCardInfoNewPrice">15,470,999</span>
+          <span class="saleCardInfoNewCredit">от 1 362 000 сум/мес</span>
+          <div class="btnCart">
+            <img src="{% static 'images/cart-card.svg' %}" alt="cart" />
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="saleCatd">
+      <div class="saleLabel">
+        <img class="saleLabelConer" src="{% static 'images/sale-end.png' %}" alt="" />
+        <span>Скидка</span>
+        <div class="saleCatdInfo">
+          <div class="saleCatdInfoImages">
+            <img src="{% static 'images/phone27.png' %}" alt="phone27" />
+            <div class="saleCatdInfoImagesColors">
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: rgb(0, 0, 0)"
+              ></div>
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: rgb(236, 187, 26)"
+              ></div>
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: #436734"
+              ></div>
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: #8b11a6"
+              ></div>
+            </div>
+          </div>
+          <h3>Samsung a52 4/256 dual sim onyx black</h3>
+          <div class="saleCatdInfoLostPrice">
+            <span>16 800 000</span><span>1 330 000 сум</span>
+          </div>
+          <span class="saleCardInfoNewPrice">15,470,999</span>
+          <span class="saleCardInfoNewCredit">от 1 362 000 сум/мес</span>
+          <div class="btnCart">
+            <img src="{% static 'images/cart-card.svg' %}" alt="cart" />
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="saleCatd">
+      <div class="saleLabel">
+        <img class="saleLabelConer" src="{% static 'images/sale-end.png' %}" alt="" />
+        <span>Скидка</span>
+        <div class="saleCatdInfo">
+          <div class="saleCatdInfoImages">
+            <img src="{% static 'images/phone27.png' %}" alt="phone27" />
+            <div class="saleCatdInfoImagesColors">
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: rgb(0, 0, 0)"
+              ></div>
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: rgb(236, 187, 26)"
+              ></div>
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: #436734"
+              ></div>
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: #8b11a6"
+              ></div>
+            </div>
+          </div>
+          <h3>Samsung a52 4/256 dual sim onyx black</h3>
+          <div class="saleCatdInfoLostPrice">
+            <span>16 800 000</span><span>1 330 000 сум</span>
+          </div>
+          <span class="saleCardInfoNewPrice">15,470,999</span>
+          <span class="saleCardInfoNewCredit">от 1 362 000 сум/мес</span>
+          <div class="btnCart">
+            <img src="{% static 'images/cart-card.svg' %}" alt="cart" />
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="saleCatd">
+      <div class="saleLabel">
+        <img class="saleLabelConer" src="{% static 'images/sale-end.png' %}" alt="" />
+        <span>Скидка</span>
+        <div class="saleCatdInfo">
+          <div class="saleCatdInfoImages">
+            <img src="{% static 'images/phone27.png' %}" alt="phone27" />
+            <div class="saleCatdInfoImagesColors">
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: rgb(0, 0, 0)"
+              ></div>
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: rgb(236, 187, 26)"
+              ></div>
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: #436734"
+              ></div>
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: #8b11a6"
+              ></div>
+            </div>
+          </div>
+          <h3>Samsung a52 4/256 dual sim onyx black</h3>
+          <div class="saleCatdInfoLostPrice">
+            <span>16 800 000</span><span>1 330 000 сум</span>
+          </div>
+          <span class="saleCardInfoNewPrice">15,470,999</span>
+          <span class="saleCardInfoNewCredit">от 1 362 000 сум/мес</span>
+          <div class="btnCart">
+            <img src="{% static 'images/cart-card.svg' %}" alt="cart" />
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="saleCatd">
+      <div class="saleLabel">
+        <img class="saleLabelConer" src="{% static 'images/sale-end.png' %}" alt="" />
+        <span>Скидка</span>
+        <div class="saleCatdInfo">
+          <div class="saleCatdInfoImages">
+            <img src="{% static 'images/phone27.png' %}" alt="phone27" />
+            <div class="saleCatdInfoImagesColors">
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: rgb(0, 0, 0)"
+              ></div>
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: rgb(236, 187, 26)"
+              ></div>
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: #436734"
+              ></div>
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: #8b11a6"
+              ></div>
+            </div>
+          </div>
+          <h3>Samsung a52 4/256 dual sim onyx black</h3>
+          <div class="saleCatdInfoLostPrice">
+            <span>16 800 000</span><span>1 330 000 сум</span>
+          </div>
+          <span class="saleCardInfoNewPrice">15,470,999</span>
+          <span class="saleCardInfoNewCredit">от 1 362 000 сум/мес</span>
+          <div class="btnCart">
+            <img src="{% static 'images/cart-card.svg' %}" alt="cart" />
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="saleCatd">
+      <div class="saleLabel">
+        <img class="saleLabelConer" src="{% static 'images/sale-end.png' %}" alt="" />
+        <span>Скидка</span>
+        <div class="saleCatdInfo">
+          <div class="saleCatdInfoImages">
+            <img src="{% static 'images/phone27.png' %}" alt="phone27" />
+            <div class="saleCatdInfoImagesColors">
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: rgb(0, 0, 0)"
+              ></div>
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: rgb(236, 187, 26)"
+              ></div>
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: #436734"
+              ></div>
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: #8b11a6"
+              ></div>
+            </div>
+          </div>
+          <h3>Samsung a52 4/256 dual sim onyx black</h3>
+          <div class="saleCatdInfoLostPrice">
+            <span>16 800 000</span><span>1 330 000 сум</span>
+          </div>
+          <span class="saleCardInfoNewPrice">15,470,999</span>
+          <span class="saleCardInfoNewCredit">от 1 362 000 сум/мес</span>
+          <div class="btnCart">
+            <img src="{% static 'images/cart-card.svg' %}" alt="cart" />
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="saleCatd">
+      <div class="saleLabel">
+        <img class="saleLabelConer" src="{% static 'images/sale-end.png' %}" alt="" />
+        <span>Скидка</span>
+        <div class="saleCatdInfo">
+          <div class="saleCatdInfoImages">
+            <img src="{% static 'images/phone27.png' %}" alt="phone27" />
+            <div class="saleCatdInfoImagesColors">
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: rgb(0, 0, 0)"
+              ></div>
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: rgb(236, 187, 26)"
+              ></div>
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: #436734"
+              ></div>
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: #8b11a6"
+              ></div>
+            </div>
+          </div>
+          <h3>Samsung a52 4/256 dual sim onyx black</h3>
+          <div class="saleCatdInfoLostPrice">
+            <span>16 800 000</span><span>1 330 000 сум</span>
+          </div>
+          <span class="saleCardInfoNewPrice">15,470,999</span>
+          <span class="saleCardInfoNewCredit">от 1 362 000 сум/мес</span>
+          <div class="btnCart">
+            <img src="{% static 'images/cart-card.svg' %}" alt="cart" />
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="saleCatd">
+      <div class="saleLabel">
+        <img class="saleLabelConer" src="{% static 'images/sale-end.png' %}" alt="" />
+        <span>Скидка</span>
+        <div class="saleCatdInfo">
+          <div class="saleCatdInfoImages">
+            <img src="{% static 'images/phone27.png' %}" alt="phone27" />
+            <div class="saleCatdInfoImagesColors">
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: rgb(0, 0, 0)"
+              ></div>
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: rgb(236, 187, 26)"
+              ></div>
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: #436734"
+              ></div>
+              <div
+                class="saleCatdInfoImagesColor"
+                style="background-color: #8b11a6"
+              ></div>
+            </div>
+          </div>
+          <h3>Samsung a52 4/256 dual sim onyx black</h3>
+          <div class="saleCatdInfoLostPrice">
+            <span>16 800 000</span><span>1 330 000 сум</span>
+          </div>
+          <span class="saleCardInfoNewPrice">15,470,999</span>
+          <span class="saleCardInfoNewCredit">от 1 362 000 сум/мес</span>
+          <div class="btnCart">
+            <img src="{% static 'images/cart-card.svg' %}" alt="cart" />
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+<!-- CATEGORY-END -->
+{% endblock content %}

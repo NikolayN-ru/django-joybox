@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'reset.css' %}" />
+    <!-- <link rel="stylesheet" href="{% static './style.css' %}" /> -->
+    {% static 'style.css' as css_url %}
+    <link rel="stylesheet" href="{{ css_url }}" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="headerTop">
+        <div class="headerTopLogo" data-logo="логотип магазина электроники">
+          <img src="{% static 'images/logo.png' %}" alt="logo" />
+        </div>
+        <div class="headerTopInput">
+          <button>
+            <img src="{% static 'images/search.svg' %}" alt="search" />Поиск
+          </button>
+          <input type="text" />
+        </div>
+        <div class="headerTopMenu">
+          <div class="headerTopMenuItem">
+            <img src="{% static 'images/profile.svg' %}" alt="profile" />
+            <p>Покупателям</p>
+          </div>
+          <div class="headerTopMenuItem headerTopMenuCart">
+            <img src="{% static 'images/cart.svg' %}" alt="cart" />
+            <p>Корзина</p>
+            <div class="miniCartMenu">
+              <div class="lineCart"></div>
+              <div class="miniCartItem">
+                <div class="miniCartItemImg">
+                  <img src="{% static 'images/cart1.png' %}" alt="cart1" />
+                </div>
+                <div class="miniCartItemDesc">
+                  <h5>Смартфон Apple Iphone 11 128 Gb Black (MHDH3)</h5>
+                  <span>16 800 000</span><span>1 330 000 сум</span>
+                  <p>15,470,999</p>
+                </div>
+                <div class="miniCartItemInterface">
+                  <img src="{% static 'images/arrow-cart.svg' %}" alt="arrow" />
+                  <a href="#">удалить</a>
+                </div>
+              </div>
+              <div class="miniCartItem">
+                <div class="miniCartItemImg">
+                  <img src="{% static 'images/cart2.png' %}" alt="cart1" />
+                </div>
+                <div class="miniCartItemDesc">
+                  <h5>Смартфон Apple Iphone 11 128 Gb Black (MHDH3)</h5>
+                  <span>16 800 000</span><span>1 330 000 сум</span>
+                  <p>15,470,999</p>
+                </div>
+                <div class="miniCartItemInterface">
+                  <img src="{% static 'images/arrow-cart.svg' %}" alt="arrow" />
+                  <a href="#">удалить</a>
+                </div>
+              </div>
+              <div class="miniCartItem">
+                <div class="miniCartItemImg">
+                  <img src="{% static 'images/cart3.png' %}" alt="cart1" />
+                </div>
+                <div class="miniCartItemDesc">
+                  <h5>Смартфон Apple Iphone 11 128 Gb Black (MHDH3)</h5>
+                  <span>16 800 000</span><span>1 330 000 сум</span>
+                  <p>15,470,999</p>
+                </div>
+                <div class="miniCartItemInterface">
+                  <img src="{% static 'images/arrow-cart.svg' %}" alt="arrow" />
+                  <a href="#">удалить</a>
+                </div>
+              </div>
+              <div class="miniCartTotal">
+                <div class="miniCartTotalPrice">
+                  <span>Всего:</span><span>32 653 000 сум</span>
+                </div>
+                <button class="miniCartTotalBtn">Оформить заказ</button>
+                <br />
+                <a href="#">Перейти в корзину</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="headerBottom">
+        <ul class="headerBottomItems">
+          <li class="headerBottomItem">
+            <img src="{% static 'images/category.svg' %}" /><a href="#"
+              >Категории</a
+            >
+            <div class="headerBottomItemMenu">
+              <div class="headerBottomItemMenuItem">
+                <a href="#">Акции</a
+                ><img src="{% static 'images/arrow-right.svg' %}" />
+                <div class="subSubMenu">
+                  <a href="#">apple</a><a href="#">apple</a
+                  ><a href="#">apple</a>
+                  <a href="#">apple</a>
+                  <a href="#">apple</a>
+                </div>
+              </div>
+              <div class="headerBottomItemMenuItem">
+                <a href="#">Смартфоны</a
+                ><img src="{% static 'images/arrow-right.svg' %}" />
+                <div class="subSubMenu">
+                  <a href="#">apple</a><a href="#">apple</a
+                  ><a href="#">apple</a>
+                  <a href="#">apple</a>
+                  <a href="#">apple</a>
+                </div>
+              </div>
+              <div class="headerBottomItemMenuItem">
+                <a href="#">Техника для кухни</a
+                ><img src="{% static 'images/arrow-right.svg' %}" />
+                <div class="subSubMenu">
+                  <a href="#">apple</a><a href="#">apple</a
+                  ><a href="#">apple</a>
+                  <a href="#">apple</a>
+                  <a href="#">apple</a>
+                </div>
+              </div>
+              <div class="headerBottomItemMenuItem">
+                <a href="#">Техника для дома</a
+                ><img src="{% static 'images/arrow-right.svg' %}" />
+                <div class="subSubMenu">
+                  <a href="#">apple</a><a href="#">apple</a
+                  ><a href="#">apple</a>
+                  <a href="#">apple</a>
+                  <a href="#">apple</a>
+                </div>
+              </div>
+              <div class="headerBottomItemMenuItem">
+                <a href="#">Ноутбуки, Пк, Планшеты</a
+                ><img src="{% static 'images/arrow-right.svg' %}" />
+                <div class="subSubMenu">
+                  <a href="#">apple</a><a href="#">apple</a
+                  ><a href="#">apple</a>
+                  <a href="#">apple</a>
+                  <a href="#">apple</a>
+                </div>
+              </div>
+              <div class="headerBottomItemMenuItem">
+                <a href="#">Телевизоры, аудиотехника</a
+                ><img src="{% static 'images/arrow-right.svg' %}" />
+                <div class="subSubMenu">
+                  <a href="#">apple</a><a href="#">apple</a
+                  ><a href="#">apple</a>
+                  <a href="#">apple</a>
+                  <a href="#">apple</a>
+                </div>
+              </div>
+              <div class="headerBottomItemMenuItem">
+                <a href="#">Для геймеров</a
+                ><img src="{% static 'images/arrow-right.svg' %}" />
+                <div class="subSubMenu">
+                  <a href="#">apple</a><a href="#">apple</a
+                  ><a href="#">apple</a>
+                  <a href="#">apple</a>
+                  <a href="#">apple</a>
+                </div>
+              </div>
+              <div class="headerBottomItemMenuItem">
+                <a href="#">Смарт-гаджеты</a
+                ><img src="{% static 'images/arrow-right.svg' %}" />
+                <div class="subSubMenu">
+                  <a href="#">apple</a><a href="#">apple</a
+                  ><a href="#">apple</a>
+                  <a href="#">apple</a>
+                  <a href="#">apple</a>
+                </div>
+              </div>
+              <div class="headerBottomItemMenuItem">
+                <a href="#">Фото, Видео, авто</a
+                ><img src="{% static 'images/arrow-right.svg' %}" />
+                <div class="subSubMenu">
+                  <a href="#">apple</a><a href="#">apple</a
+                  ><a href="#">apple</a>
+                  <a href="#">apple</a>
+                  <a href="#">apple</a>
+                </div>
+              </div>
+              <div class="headerBottomItemMenuItem">
+                <a href="#">Дом, Сад</a
+                ><img src="{% static 'images/arrow-right.svg' %}" />
+                <div class="subSubMenu">
+                  <a href="#">apple</a><a href="#">apple</a
+                  ><a href="#">apple</a>
+                  <a href="#">apple</a>
+                  <a href="#">apple</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="#sale" class="headerBottomItem">Скидки</a></li>
+          <li class="headerBottomItem">
+            <a href="#">Смартфоны</a>
+            <div class="headerBottomItemMenu">
+              <div class="headerBottomItemMenuItem">
+                <a href="#">apple</a>
+              </div>
+              <div class="headerBottomItemMenuItem">
+                <a href="#">apple</a>
+              </div>
+              <div class="headerBottomItemMenuItem">
+                <a href="#">apple</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="#" class="headerBottomItem">ТВ</a></li>
+          <li class="headerBottomItem">
+            <a href="#">Техника для кухни</a>
+            <div class="headerBottomItemMenu">
+              <div class="headerBottomItemMenuItem">
+                <a href="#">apple</a>
+              </div>
+              <div class="headerBottomItemMenuItem">
+                <a href="#">apple</a>
+              </div>
+              <div class="headerBottomItemMenuItem">
+                <a href="#">apple</a>
+              </div>
+            </div>
+          </li>
+          <li class="headerBottomItem">
+            <a href="#">Техника для дома</a>
+            <div class="headerBottomItemMenu">
+              <div class="headerBottomItemMenuItem">
+                <a href="#">apple</a>
+              </div>
+              <div class="headerBottomItemMenuItem">
+                <a href="#">apple</a>
+              </div>
+              <div class="headerBottomItemMenuItem">
+                <a href="#">apple</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="#" class="headerBottomItem">Ноутбук, ПК, планшет</a></li>
+          <li><a href="#" class="headerBottomItem">Для геймеров</a></li>
+        </ul>
+      </div>
+      <button class="mobileMenu">
+        <img src="{% static 'images/arrow-right.svg' %}" alt="arrow" />
+      </button>
+      <div class="mobileMenuItems">
+        <ul>
+          <li><a href="#" class="mobileMenuItem">категории</a></li>
+          <li><a href="#" class="mobileMenuItem">скидки</a></li>
+          <li><a href="#" class="mobileMenuItem">смартфоны</a></li>
+          <li><a href="#" class="mobileMenuItem">ТВ</a></li>
+          <li><a href="#" class="mobileMenuItem">Техника для кухни</a></li>
+          <li><a href="#" class="mobileMenuItem">Техника для дома</a></li>
+          <li><a href="#" class="mobileMenuItem">Ноутбук, ПК, планшет</a></li>
+          <li><a href="#" class="mobileMenuItem">Для геймеров</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">{% block content %} {% endblock content %}</main>
+	<footer>
+        <ul class="list1">
+          <p>Помощь и информация</p>
+          <li class="list1Item">Помощь</li>
+          <li class="list1Item">Условия доставки</li>
+          <li class="list1Item">Условия возврата</li>
+        </ul>
+        <ul class="list2">
+          <p>О проекте</p>
+          <li class="list2Item">О проекте</li>
+          <li class="list2Item">Сотрудничество</li>
+          <li class="list2Item">Контакты и адрес</li>
+          <li class="list2Item">Вакансии</li>
+        </ul>
+        <ul class="list3">
+          <p>Больше о JoyBox</p>
+          <li class="list3Item">Telegram-бот</li>
+          <li class="list3Item">Мобильное приложение</li>
+          <li class="list3Item">Для юр. лиц</li>
+        </ul>
+      </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
